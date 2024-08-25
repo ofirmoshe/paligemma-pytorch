@@ -11,7 +11,7 @@ class SigLIPConfig:
     num_attention_heads: int = 12
     num_channels: int = 3
     image_size: int = 224
-    patch_size: int = 16
+    patch_size: int = 14
     layer_norm_eps: int = 1e-6
     attention_dropout: int = 0.0
     num_image_tokens: int = None
