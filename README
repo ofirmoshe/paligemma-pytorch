@@ -1,6 +1,6 @@
-# PaliGemma: A Vision-Language Model Pytorch Implementation
+# PaliGemma: A Vision-Language Model Implementation
 
-![PaliGemma Architecture](images/paligemma_arch.png)
+![PaliGemma Architecture](images/paligemma.jpg)
 
 ## Overview
 
@@ -43,9 +43,10 @@ The model comprises a SigLIP vision encoder and a Gemma language decoder, linked
 Clone this repository and install the required dependencies:
 
 ```bash
-git clone https://github.com/ofirmoshe/paligemma-pytorch.git
+git clone https://github.com/username/PaliGemma.git
+cd PaliGemma
 pip install -r requirements.txt
 ```
 
 ## Usage
-To be updated
+TODO
