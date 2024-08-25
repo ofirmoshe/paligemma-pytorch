@@ -1,0 +1,52 @@
+# PaliGemma: A Vision-Language Model Pytorch Implementation
+
+![PaliGemma Architecture](images/paligemma_arch.png)
+
+## Overview
+
+PaliGemma is a cutting-edge Vision-Language Model inspired by Google's PaliGemma architecture. This repository provides a full implementation of the PaliGemma model using PyTorch, focusing on multimodal deep learning that integrates visual and textual information seamlessly.
+
+The model comprises a SigLIP vision encoder and a Gemma language decoder, linked by a multimodal linear projection layer. The PaliGemma model processes images by segmenting them into a fixed number of Vision Transformer (ViT) tokens, which are then combined with an optional text prompt. The model's unique approach involves full block attention across both image tokens and text tokens, enabling robust understanding and generation of text and images.
+
+## Key Features
+
+- **Transformer Architecture**: Includes detailed implementations of embeddings, positional encoding, multi-head attention, feed-forward layers, and more.
+- **Vision Transformer (ViT)**: Efficiently processes images into tokens for integration with textual data.
+- **SigLIP Vision Encoder**: Utilizes contrastive learning principles, building on the ideas behind CLIP and SigLIP for robust image representation.
+- **Gemma Language Decoder**: Capable of generating text from visual inputs, leveraging rotary positional embeddings and attention mechanisms.
+- **Attention Mechanisms**: Includes multi-head attention, grouped query attention, and support for causal and non-causal masks.
+- **KV-Cache**: Supports efficient token generation with pre-filling capabilities.
+- **Normalization Layers**: Implements batch, layer, and RMS normalization for stability during training.
+- **Top-P Sampling**: Integrated for flexible text generation with temperature control.
+- **Numerical Stability**: Ensures stability in softmax and cross-entropy loss calculations.
+
+## Architecture Components
+
+### Vision Transformer
+- **Embeddings**: Converts image patches into a dense representation.
+- **Positional Encoding**: Adds spatial information to the embeddings.
+- **Multi-Head Attention**: Focuses on different parts of the image and text simultaneously.
+
+### SigLIP Encoder
+- **Contrastive Learning**: Trains the encoder to distinguish between different images effectively.
+- **Normalization**: Applies batch and layer normalization to stabilize training.
+
+### Gemma Decoder
+- **Multi-Head Attention**: Applies attention across image and text tokens.
+- **Grouped Query Attention**: Optimizes attention by grouping similar queries.
+- **Rotary Positional Embedding**: Enhances attention mechanisms with improved positional information.
+- **Top-P Sampling**: Controls the diversity of generated text.
+- **KV-Cache**: Implements caching for efficient token generation.
+
+## Installation
+
+Clone this repository and install the required dependencies:
+
+```bash
+git clone https://github.com/ofirmoshe/paligemma-pytorch.git
+pip install -r requirements.txt
+```
+
+## Usage
+To be updated
+
